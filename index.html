@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Bebidas, Alcohol e Hielo para Fiestas y Casamientos</title>
+  <meta name="description" content="Calcula online cuánto alcohol, cerveza, vino, fernet, gaseosas y bolsas de hielo comprar para tu fiesta, asado, cumpleaños o casamiento. Lista para supermercado y distribuidora.">
+  <meta name="keywords" content="calculadora bebidas fiesta, cuanto alcohol comprar casamiento, calculadora cerveza por persona, fernet por persona fiesta, cuantas bolsas de hielo comprar, calculadora barra de tragos">
+  <link rel="canonical" href="https://sebiglesias.com.ar/bebidas-fiesta/">
+  <meta name="google-adsense-account" content="ca-pub-3381238987477190">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculadora de Bebidas, Alcohol e Hielo para Fiestas y Eventos">
+  <meta property="og:description" content="Calcula la cantidad exacta de cerveza, vino, fernet, gaseosas y hielo para que no sobre ni falte nada en tu fiesta.">
+  <meta property="og:url" content="https://sebiglesias.com.ar/bebidas-fiesta/">
+  <meta property="og:image" content="https://sebiglesias.com.ar/bebidas-fiesta/icon.svg">
+
+  <!-- Icons & PWA -->
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#09090b">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BNDBQP0W7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2BNDBQP0W7');
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190" crossorigin="anonymous"></script>
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://sebiglesias.com.ar/bebidas-fiesta/#webapp",
+        "name": "Calculadora de Bebidas y Alcohol para Fiestas",
+        "url": "https://sebiglesias.com.ar/bebidas-fiesta/",
+        "description": "Calculadora técnica de catering para estimar consumo de cerveza, vino, destilados, refrescos y hielo según cantidad de invitados y horas de fiesta.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://sebiglesias.com.ar/bebidas-fiesta/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánta bebida se calcula por persona para una fiesta de 5 horas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En promedio, una persona consume entre 1 y 1.5 litros de líquido durante un evento de 5 horas. Si solo se sirve cerveza, se calculan de 2.5 a 3 latas (473ml) por persona. Si hay variedad de alcohol (vino, cerveza y barra de tragos), la demanda se reparte en aproximadamente 1 lata de cerveza, 1/3 de botella de vino y 1 o 2 tragos por adulto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántas bolsas de hielo se necesitan para una fiesta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Se calcula aproximadamente 1 kg de hielo por invitado para fiestas de noche templadas o en verano. Esto contempla tanto el hielo que se sirve dentro del vaso para enfriar los tragos, como el hielo de bacha, tina o frapera para mantener latas y botellas frías. Para 20 personas se recomiendan entre 4 y 5 bolsas de 4 kg."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto rinde una botella de Fernet de 750ml?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Una botella de Fernet de 750ml rinde entre 10 y 12 vasos servidos con la proporción clásica de 30% Fernet y 70% Coca-Cola (y abundante hielo). Para cada botella de Fernet se necesitan entre 2 y 2.5 litros de gaseosa cola."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuántas copas rinde una botella de champagne o vino espumante?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Una botella estándar de 750ml rinde exactamente 6 copas flauta servidas a tres cuartos de su capacidad. Para un brindis formal se calcula 1 botella cada 5 o 6 invitados."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo influye el clima y la época del año en el consumo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En días calurosos de primavera y verano, el consumo de cerveza y agua aumenta entre un 25% y un 35%, mientras que el consumo de vino tinto disminuye. En invierno o días fríos ocurre lo opuesto: el vino tinto y las bebidas espirituosas cobran mayor protagonismo y la cerveza baja su demanda."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="icon.svg" alt="Bebidas Fiesta Icon" class="brand-icon">
+        <div>
+          <h1 class="brand-title">Calculadora de Bebidas <span class="brand-badge">PARTY</span></h1>
+          <a href="https://sebiglesias.com.ar" class="back-link">← Volver a sebiglesias.com.ar</a>
+        </div>
+      </div>
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema">☀️</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Presets bar -->
+    <div class="presets-bar">
+      <span class="presets-label">Plantillas rápidas:</span>
+      <button class="preset-chip" data-preset="previa">🎉 Previa / Amigos (20p)</button>
+      <button class="preset-chip" data-preset="casamiento">💒 Casamiento / Fiesta 15 (100p)</button>
+      <button class="preset-chip" data-preset="asado">🥩 Asado Tradicional (15p)</button>
+      <button class="preset-chip" data-preset="familiar">🍽️ Cena Familiar / Brindis (15p)</button>
+    </div>
+
+    <!-- Main Grid -->
+    <div class="calc-grid">
+      <!-- Left Column: Parameters -->
+      <section class="card">
+        <h2 class="card-title">
+          <span>👥 Invitados y Características</span>
+        </h2>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label" for="input-drinkers">
+              <span>Adultos que toman alcohol</span>
+              <span class="form-sublabel">Cerveza, vino, tragos</span>
+            </label>
+            <input type="number" id="input-drinkers" class="form-input" min="0" max="1000" value="20">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="input-nondrinkers">
+              <span>Personas sin alcohol</span>
+              <span class="form-sublabel">Niños / conductores</span>
+            </label>
+            <input type="number" id="input-nondrinkers" class="form-input" min="0" max="1000" value="4">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">
+            <span>Duración del Evento</span>
+          </label>
+          <div class="btn-toggle-group">
+            <button class="btn-toggle btn-hours" data-hours="3">3 Horas (Cena/Previa)</button>
+            <button class="btn-toggle btn-hours active" data-hours="5">5 Horas (Fiesta estándar)</button>
+            <button class="btn-toggle btn-hours" data-hours="8">8 Horas (Toda la noche)</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">
+            <span>Clima / Época del Año</span>
+          </label>
+          <div class="btn-toggle-group">
+            <button class="btn-toggle btn-climate active" data-climate="summer">☀️ Verano / Caluroso (+birra/hielo)</button>
+            <button class="btn-toggle btn-climate" data-climate="winter">❄️ Invierno / Templado (+vino)</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">
+            <span>¿Qué bebidas se van a servir?</span>
+          </label>
+          <div class="drinks-category-grid">
+            <label class="drink-check-card" for="chk-beer">
+              <input type="checkbox" id="chk-beer" checked>
+              <span class="drink-check-label">🍺 Cerveza</span>
+            </label>
+            <label class="drink-check-card" for="chk-wine">
+              <input type="checkbox" id="chk-wine" checked>
+              <span class="drink-check-label">🍷 Vino (Tinto/Blanco)</span>
+            </label>
+            <label class="drink-check-card" for="chk-spirits">
+              <input type="checkbox" id="chk-spirits" checked>
+              <span class="drink-check-label">🥃 Fernet / Gin / Vodka</span>
+            </label>
+            <label class="drink-check-card" for="chk-champagne">
+              <input type="checkbox" id="chk-champagne">
+              <span class="drink-check-label">🍾 Champán / Brindis</span>
+            </label>
+            <label class="drink-check-card" for="chk-soda">
+              <input type="checkbox" id="chk-soda" checked>
+              <span class="drink-check-label">🥤 Gaseosas y Aguas</span>
+            </label>
+            <label class="drink-check-card" for="chk-ice">
+              <input type="checkbox" id="chk-ice" checked>
+              <span class="drink-check-label">🧊 Bolsas de Hielo</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="action-toolbar" style="margin-top: 24px;">
+          <button id="btn-share" class="btn-primary">
+            <span>📲 Copiar Lista / WhatsApp</span>
+          </button>
+          <button id="btn-print" class="btn-secondary">
+            <span>🖨️ Imprimir</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Right Column: Results & Shopping Items -->
+      <section class="card">
+        <h2 class="card-title">
+          <span>🛒 Lista de Compra Sugerida</span>
+        </h2>
+
+        <div class="results-hero">
+          <div class="hero-box">
+            <div id="hero-litres" class="hero-val">0 L</div>
+            <div class="hero-label">Total Litros Bebida</div>
+          </div>
+          <div class="hero-box">
+            <div id="hero-ice" class="hero-val">0 bolsas</div>
+            <div class="hero-label">Hielo Rolito (4kg c/u)</div>
+          </div>
+        </div>
+
+        <div class="shopping-list">
+          <!-- Beer -->
+          <div id="card-beer" class="shop-card">
+            <div class="shop-left">
+              <span class="shop-emoji">🍺</span>
+              <div>
+                <div class="shop-title">Cerveza</div>
+                <div class="shop-sub">Latas de 473ml (o botellas de 1L)</div>
+              </div>
+            </div>
+            <div class="shop-right">
+              <div id="val-beer" class="shop-val">0 latas</div>
+            </div>
+          </div>
+
+          <!-- Wine -->
+          <div id="card-wine" class="shop-card">
+            <div class="shop-left">
+              <span class="shop-emoji">🍷</span>
+              <div>
+                <div class="shop-title">Vino (Tinto y Blanco)</div>
+                <div class="shop-sub">Botellas clásicas de 750ml</div>
+              </div>
+            </div>
+            <div class="shop-right">
+              <div id="val-wine" class="shop-val">0 botellas</div>
+            </div>
+          </div>
+
+          <!-- Spirits -->
+          <div id="card-spirits" class="shop-card">
+            <div class="shop-left">
+              <span class="shop-emoji">🥃</span>
+              <div>
+                <div class="shop-title">Destilados (Fernet / Gin / Vodka)</div>
+                <div class="shop-sub">Botellas de 750ml para barra de tragos</div>
+              </div>
+            </div>
+            <div class="shop-right">
+              <div id="val-spirits" class="shop-val">0 botellas</div>
+            </div>
+          </div>
+
+          <!-- Champagne -->
+          <div id="card-champagne" class="shop-card" style="display: none;">
+            <div class="shop-left">
+              <span class="shop-emoji">🍾</span>
+              <div>
+                <div class="shop-title">Espumante / Champán</div>
+                <div class="shop-sub">Para brindis (6 copas por botella)</div>
+              </div>
+            </div>
+            <div class="shop-right">
+              <div id="val-champagne" class="shop-val">0 botellas</div>
+            </div>
+          </div>
+
+          <!-- Sodas -->
+          <div id="card-soda" class="shop-card">
+            <div class="shop-left">
+              <span class="shop-emoji">🥤</span>
+              <div>
+                <div class="shop-title">Gaseosas (Cola / Lima / Tónica)</div>
+                <div class="shop-sub">Botellas de 2 a 2.25 Litros</div>
+              </div>
+            </div>
+            <div class="shop-right">
+              <div id="val-soda" class="shop-val">0 botellas</div>
+            </div>
+          </div>
+
+          <!-- Water -->
+          <div id="card-water" class="shop-card">
+            <div class="shop-left">
+              <span class="shop-emoji">💧</span>
+              <div>
+                <div class="shop-title">Agua Mineral y Soda</div>
+                <div class="shop-sub">Hidratación y cortes</div>
+              </div>
+            </div>
+            <div class="shop-right">
+              <div id="val-water" class="shop-val">0 botellas</div>
+            </div>
+          </div>
+
+          <!-- Ice -->
+          <div id="card-ice" class="shop-card">
+            <div class="shop-left">
+              <span class="shop-emoji">🧊</span>
+              <div>
+                <div class="shop-title">Hielo Rolito en Bolsas</div>
+                <div class="shop-sub">Para vasos y enfriar fraperas/bachas</div>
+              </div>
+            </div>
+            <div class="shop-right">
+              <div id="val-ice" class="shop-val">0 bolsas</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- AdSense Banner Unit Container -->
+    <div class="ad-slot-container">
+      <div class="ad-disclaimer">Publicidad</div>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-3381238987477190"
+           data-ad-slot="1234567890"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <!-- SEO Educational Guide Section -->
+    <article class="seo-section">
+      <h2>Fórmulas Infalibles para Calcular la Bebida en Fiestas y Eventos</h2>
+      <p>
+        Calcular la cantidad justa de bebida para un casamiento, cumpleaños, previa o asado suele generar dos temores: quedarse sin alcohol a mitad de la noche o gastar una fortuna en botellas que luego quedan acumuladas durante meses.
+      </p>
+
+      <div class="seo-box">
+        <strong>📌 La Regla de Oro del Litro por Persona:</strong><br>
+        En promedio, un invitado adulto consume aproximadamente <strong>250 a 300 ml de líquido por cada hora de fiesta</strong>. En un evento promedio de 5 horas, eso equivale a <strong>1.2 a 1.5 litros totales por persona</strong> (sumando alcohol, gaseosas y agua).
+      </div>
+
+      <h3>Cómo Equilibrar Cerveza, Vino y Barra de Tragos</h3>
+      <p>
+        El perfil de los invitados y la oferta que dispongas en la barra modifican las proporciones:
+      </p>
+      <ul style="margin-left: 20px; color: var(--text-secondary); line-height: 1.8;">
+        <li><strong>Si solo hay Cerveza:</strong> Calcula 1.2 a 1.5 litros de cerveza por bebedor (aproximadamente 3 latas de 473ml o 1.5 botellas de litro por persona). En verano cálido suma un 25% extra.</li>
+        <li><strong>Si solo hay Vino (Asados y cenas):</strong> La regla tradicional de bodegones y eventos es <strong>1 botella de 750ml cada 2 adultos</strong> (70% tinto y 30% blanco o rosado).</li>
+        <li><strong>Si hay Barra Completa (Cerveza + Vino + Tragos):</strong> El consumo se fragmenta. Un bebedor tomará 1 lata de cerveza durante la recepción, media botella de vino durante la comida y 1 o 2 vasos de trago durante el baile.</li>
+      </ul>
+
+      <h3>El Secreto del Hielo: ¿Cuánto Hielo Comprar?</h3>
+      <p>
+        El hielo es el gran olvidado que suele agotarse a medianoche arruinando los tragos:
+      </p>
+      <ol style="margin-left: 20px; color: var(--text-secondary); line-height: 1.8;">
+        <li><strong>Hielo para Servir en Vaso:</strong> Calcula <strong>0.4 a 0.5 kg de hielo por persona</strong>. Los cubos de rolito macizo son ideales porque tardan más en derretirse y no aguan las bebidas.</li>
+        <li><strong>Hielo para Enfriar en Bacha o Frapera:</strong> Si vas a colocar latas de cerveza y botellas de vino a enfriar en tachos o conservadoras con agua y sal, necesitas al menos <strong>0.6 kg extra por persona</strong>.</li>
+        <li><strong>Regla práctica total:</strong> Para 20 invitados calcula entre <strong>4 y 5 bolsas de 4 kg</strong> en invierno, y entre <strong>6 y 7 bolsas</strong> en verano.</li>
+      </ol>
+
+      <h3>Rendimiento del Fernet y los Tragos Clásicos</h3>
+      <p>
+        El fernet con cola es el trago insignia de las juntadas argentinas:
+      </p>
+      <ul style="margin-left: 20px; color: var(--text-secondary); line-height: 1.8;">
+        <li><strong>Proporción 70/30:</strong> En un vaso de 500ml con 4 cubos de hielo, se sirven aproximadamente 70ml de fernet y 200ml de Coca-Cola. Una botella de 750ml rinde <strong>10 a 11 vasos</strong>.</li>
+        <li><strong>Proporción de Gaseosa:</strong> Por cada botella de Fernet necesitas <strong>2.25 a 2.5 litros de gaseosa cola</strong>.</li>
+        <li><strong>Gin Tonic:</strong> Con 50ml de gin por copa, una botella de 750ml rinde <strong>15 copas</strong>, requiriendo 3 botellas de 1 litro de agua tónica.</li>
+      </ul>
+
+      <!-- FAQ Accordion -->
+      <h3 style="margin-top: 36px;">Preguntas Frecuentes sobre Compra de Bebidas</h3>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <div class="faq-question">¿Conviene comprar cerveza en lata o en botella? <span>▼</span></div>
+          <div class="faq-answer">
+            Para eventos grandes y previas las <strong>latas de 473ml</strong> son mucho más prácticas: se enfrían en 20 minutos con hielo y sal, no requieren destapador ni vasos descartables, no se rompen vidrios en el suelo y permiten a cada invitado regular lo que toma sin que la cerveza se caliente en una botella abierta.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">¿Cuántos vasos descartables debo comprar? <span>▼</span></div>
+          <div class="faq-answer">
+            Los invitados suelen perder o apoyar sus vasos continuamente. Calcula <strong>3 a 4 vasos descartables (o ecovasos rígidos reutilizables) por persona</strong> si sirves tragos y cerveza tirada.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">¿Cuánto tiempo antes debo poner a enfriar las bebidas? <span>▼</span></div>
+          <div class="faq-answer">
+            En heladera tradicional, las botellas de vidrio tardan al menos 4 a 6 horas en alcanzar los 4°C. Si necesitas enfriar rápido durante la fiesta, llena una bacha o conservadora con hielo, agua y 2 o 3 puñados de sal gruesa: las latas quedarán heladas en solo 12 a 15 minutos por el descenso crioscópico del agua salada.
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Related Apps Cluster -->
+    <div class="related-cluster">
+      <div class="related-title">
+        <span>🔗 Otras herramientas útiles para tus reuniones y eventos:</span>
+      </div>
+      <div class="related-links-grid">
+        <a href="https://sebiglesias.com.ar/asadin/" class="related-app-card">
+          <span>🥩 Calculadora de Asado</span>
+        </a>
+        <a href="https://sebiglesias.com.ar/pizzadita/" class="related-app-card">
+          <span>🍕 Calculadora Pizzadita</span>
+        </a>
+        <a href="https://sebiglesias.com.ar/juntadita/" class="related-app-card">
+          <span>🎉 Calculadora Juntadita</span>
+        </a>
+        <a href="https://sebiglesias.com.ar/picada/" class="related-app-card">
+          <span>🧀 Calculadora de Picada</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sticky Mobile Bar -->
+  <aside class="sticky-mobile-bar">
+    <div class="sticky-metric">
+      <span class="sticky-label">Total bebida</span>
+      <span id="sticky-litres" class="sticky-val">0 L</span>
+    </div>
+    <div class="sticky-metric">
+      <span class="sticky-label">Hielo sugerido</span>
+      <span id="sticky-ice" class="sticky-val">0 bolsas</span>
+    </div>
+    <button id="sticky-share-btn" class="sticky-btn">Lista</button>
+  </aside>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
+</html>

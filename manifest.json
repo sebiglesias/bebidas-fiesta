@@ -1,0 +1,17 @@
+{
+  "name": "Calculadora de Bebidas para Fiestas y Eventos",
+  "short_name": "Bebidas Fiesta",
+  "description": "Calcula cuánto alcohol, cerveza, vino, fernet, gaseosas y bolsas de hielo comprar para tu fiesta, asado o casamiento.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
